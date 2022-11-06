@@ -1,6 +1,8 @@
 // npm i bootstrap-scss / bootstrap
 $primary: #1492E6;
+$btn-font-size: 10px;
 @import "../node_modules/bootstrap/scss/bootstrap";
+$enable-negative-margins: true;
 
 header {
     img {
@@ -12,16 +14,67 @@ header {
     font-size: 23px;
     font-weight: 600;
 }
+button{
+    font-size: 23px;
+}
 .details, .office-work, .office-title, .review, .recommend{
     margin-top: 180px;
     h1{
         margin-bottom: 60px;
     }
 }
+.mb-n5{
+    margin-bottom: -100px !important;
+    margin-right: -80px !important;
+    margin-left: 100px !important;
+}
 .fa-star{
     color: $orange;
+}
+.fa-solid.fa-angle-right, .fa-solid.fa-angle-down{
+    cursor: pointer;
 }
 footer{
     padding-top: 200px;
     padding-bottom: 20px;
+}
+
+
+@media screen and (max-width: 1400px){
+    .details, .office-work, .office-title, .review, .recommend{
+        margin-top: 100px;
+        h1{
+            margin-bottom: 40px;
+        }
+    }
+}
+@media screen and (max-width: 992px){
+    header {
+        img {
+            margin-top: 0;
+        }
+    }
+    .details, .office-work, .office-title, .review, .recommend{
+        margin-top: 100px;
+        h1{
+            margin-bottom: 40px;
+        }
+    }
+    .mb-n5{
+        margin-bottom: -80px !important;
+    }
+}
+@media screen and (max-width: 768px){
+    .mb-n5{
+        margin-left: 50px !important;
+        margin-right: -15px !important;
+    }
+}
+@media screen and (max-width: 576px) {
+    .details, .office-work, .office-title, .review, .recommend{
+        margin-top: 50px;
+        h1{
+            margin-bottom: 15px;
+        }
+    }
 }

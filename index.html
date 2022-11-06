@@ -19,7 +19,7 @@
 
 <body class="">
     <!-- Header -->
-    <header class="border-bottom border-2 ">
+    <header class="border-bottom border-2 d-flex flex-column-reverse flex-lg-column ">
         <div class="d-flex justify-content-center">
             <img src="./images/group.png" alt="">
         </div>
@@ -32,7 +32,7 @@
                     <span class="navbar-toggler-icon"></span>
                 </button>
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <ul class="navbar-nav ms-auto me-auto mb-2 mb-lg-0 gap-5">
+                    <ul class="navbar-nav ms-auto me-auto mb-2 mb-lg-0 gap-lg-5">
                         <li class="nav-item">
                             <a class="nav-link active " href="#">Nav1</a>
                         </li>
@@ -85,16 +85,16 @@
     <!-- banner -->
     <section class="banner container">
         <div class="row">
-            <div class="col-6 d-flex flex-column justify-content-center align-items-start">
+            <div class="col-lg-6 d-flex flex-column justify-content-center align-items-start">
                 <h1 class="margin-bottom fw-bold mb-3">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h1>
-                <p class="fs-6 fw-normal mb-5">Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste
+                <p class="fs-6 fw-normal mb-lg-5">Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste
                     necessitatibus
                     eum fugiat, sint expedita a quibusdam qui officia consectetur facilis nihil commodi blanditiis
                     maiores molestias temporibus quasi maxime quam doloremque?</p>
-                <button class="btn btn-primary text-white fs-4 px-5 py-3 rounded-pill" type="submit">Check
-                    Pricing</button>
+                <button class="btn btn-primary text-white px-4 px-lg-5 py-2 py-lg-3 rounded-pill fw-bold"
+                    style="font-size: 1.4vw" type="submit">Check Pricing</button>
             </div>
-            <div class="col-6">
+            <div class="col-lg-6 text-center">
                 <img src="./images/mask-group.png" alt="">
             </div>
         </div>
@@ -103,8 +103,8 @@
     <!-- Details -->
     <section class="container details">
         <h1 class="text-center">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h1>
-        <div class="d-flex justify-content-center align-items-center gap-5 mt-4">
-            <div class="card text-dark bg-light px-2 py-4 border-0 shadow rounded-5" style="">
+        <div class="d-flex justify-content-center align-items-center gap-5 flex-wrap mt-4">
+            <div class="card text-dark bg-light px-2 py-4 border-0 shadow rounded-5" style="max-width: 400px;">
                 <div class="card-body">
                     <h5 class="card-title text-center mb-3">Lorem ipsum dolor sit.</h5>
                     <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem, itaque
@@ -112,7 +112,7 @@
                         laboriosam ab illum? Laudantium blanditiis doloribus voluptatum fugit!</p>
                 </div>
             </div>
-            <div class="card text-dark bg-light px-2 py-4 border-0 shadow rounded-5" style="">
+            <div class="card text-dark bg-light px-2 py-4 border-0 shadow rounded-5" style="max-width: 400px;">
                 <div class="card-body">
                     <h5 class="card-title text-center mb-3">Lorem ipsum dolor sit.</h5>
                     <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem, itaque
@@ -120,7 +120,7 @@
                         laboriosam ab illum? Laudantium blanditiis doloribus voluptatum fugit!</p>
                 </div>
             </div>
-            <div class="card text-dark bg-light px-2 py-4 border-0 shadow rounded-5" style="">
+            <div class="card text-dark bg-light px-2 py-4 border-0 shadow rounded-5" style="max-width: 400px;">
                 <div class="card-body">
                     <h5 class="card-title text-center mb-3">Lorem ipsum dolor sit.</h5>
                     <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem, itaque
@@ -134,8 +134,8 @@
     <!-- Office Work -->
     <section class="container office-work">
         <h1 class="text-center">Lorem ipsum dolor sit amet consectetur, adipisicing elit.</h1>
-        <div class="d-flex justify-content-between align-items-center gap-5">
-            <div class="card border-0 mt-4">
+        <div class="d-flex justify-content-between align-items-center flex-wrap gap-5">
+            <div class="card border-0 mt-4 mx-auto" style="max-width: 400px;">
                 <img class="img-fluid" style="max-width: 250px" src="./images/artwork.png" class="card-img-top"
                     alt="...">
                 <div class="">
@@ -145,7 +145,7 @@
                         laudantium libero? Ratione repellendus distinctio voluptates odio suscipit error.</p>
                 </div>
             </div>
-            <div class="card border-0 mt-4">
+            <div class="card border-0 mt-sm-3 mt-lg-4 mx-auto" style="max-width: 400px">
                 <img class="img-fluid" style="max-width: 250px" src="./images/art-work.png" class="card-img-top"
                     alt="...">
                 <div class="">
@@ -155,7 +155,7 @@
                         laudantium libero? Ratione repellendus distinctio voluptates odio suscipit error.</p>
                 </div>
             </div>
-            <div class="card border-0 mt-4">
+            <div class="card border-0 mt-sm-3 mt-lg-4 mx-auto" style="max-width: 400px">
                 <img class="img-fluid" style="max-width: 200px" src="./images/art-work2.png" class="card-img-top"
                     alt="...">
                 <div class="">
@@ -171,48 +171,52 @@
     <!-- office title -->
     <section class="container office-title">
         <h1 class="text-center">Lorem ipsum, dolor sit amet consectetur adipisicing elit.</h1>
-        <div>
+        <div class="my-3 my-lg-0">
             <div class="d-flex gap-4 align-items-center">
                 <img src="./images/save-money.png" alt="">
                 <h3>Lorem ipsum dolor sit.</h3>
             </div>
-            <p class="fs-4 fw-normal mt-2">adipiscing elit. Ut sed commod est. Pellentesque eu placerat maruris. <br> ut
+            <p class="fs-4 fw-normal mb-0 mb-lg-3">adipiscing elit. Ut sed commod est. Pellentesque eu placerat maruris.
+                <br> ut
                 maximus ante. Suspendisse varius dolor nec bibenndum dignissim</p>
-            <button class="btn btn-primary text-white fs-4 px-5 py-3 rounded-pill mt-2" type="submit">Check
-                Pricing</button>
+            <button class="btn btn-primary text-white px-4 px-lg-5 py-2 py-lg-3 rounded-pill mt-2 fw-bold"
+                style="font-size: 1.4vw" type="submit">Check Pricing</button>
         </div>
-        <div class="d-flex flex-column align-items-end">
+        <div class="d-flex flex-column align-items-lg-end my-3 my-lg-0">
             <div>
                 <div class="d-flex gap-4 align-items-center">
                     <img src="./images/accuracy.png" alt="">
                     <h3>Lorem ipsum dolor sit.</h3>
                 </div>
-                <p class="fs-4 fw-normal mt-2">adipiscing elit. Ut sed commodo est. Pellentesque <br> eu placerat
-                    mauris. Ut maximus ante. Suspendisse</p>
-                <button class="btn btn-primary text-white fs-4 px-5 py-3 rounded-pill mt-2" type="submit">Check
-                    Pricing</button>
+                <p class="fs-4 fw-normal mb-0 mb-lg-3">adipiscing elit. Ut sed commod est. Pellentesque eu placerat
+                    maruris. <br> ut
+                    maximus ante. Suspendisse varius dolor nec bibenndum dignissim</p>
+                <button class="btn btn-primary text-white px-4 px-lg-5 py-2 py-lg-3 rounded-pill mt-2 fw-bold"
+                    style="font-size: 1.4vw" type="submit">Check Pricing</button>
             </div>
         </div>
-        <div>
+        <div class="my-3 my-lg-0">
             <div class="d-flex gap-4 align-items-center">
                 <img src="./images/hiring.png" alt="">
                 <h3>Lorem ipsum dolor sit.</h3>
             </div>
-            <p class="fs-4 fw-normal mt-2">adipiscing elit. Ut sed commod est. Pellentesque eu placerat maruris. <br> ut
+            <p class="fs-4 fw-normal mb-0 mb-lg-3">adipiscing elit. Ut sed commod est. Pellentesque eu placerat maruris.
+                <br> ut
                 maximus ante. Suspendisse varius dolor nec bibenndum dignissim</p>
-            <button class="btn btn-primary text-white fs-4 px-5 py-3 rounded-pill mt-2" type="submit">Check
-                Pricing</button>
+            <button class="btn btn-primary text-white px-4 px-lg-5 py-2 py-lg-3 rounded-pill mt-2 fw-bold"
+                style="font-size: 1.4vw" type="submit">Check Pricing</button>
         </div>
-        <div class="d-flex flex-column align-items-end">
+        <div class="d-flex flex-column align-items-lg-end my-3 my-lg-0">
             <div>
                 <div class="d-flex gap-4 align-items-center">
                     <img src="./images/money-back.png" alt="">
                     <h3>Lorem ipsum dolor sit.</h3>
                 </div>
-                <p class="fs-4 fw-normal mt-2">adipiscing elit. Ut sed commodo est. Pellentesque <br> eu placerat
-                    mauris. Ut maximus ante. Suspendisse</p>
-                <button class="btn btn-primary text-white fs-4 px-5 py-3 rounded-pill mt-2" type="submit">Check
-                    Pricing</button>
+                <p class="fs-4 fw-normal mb-0 mb-lg-3">adipiscing elit. Ut sed commod est. Pellentesque eu placerat
+                    maruris. <br> ut
+                    maximus ante. Suspendisse varius dolor nec bibenndum dignissim</p>
+                <button class="btn btn-primary text-white px-4 px-lg-5 py-2 py-lg-3 rounded-pill mt-2 fw-bold"
+                    style="font-size: 1.4vw" type="submit">Check Pricing</button>
             </div>
         </div>
     </section>
@@ -225,7 +229,7 @@
                 <img src="./images/star.png" style="max-width: 70px" alt="star-icon">
                 Lorem ipsum dolor sit.
             </h3>
-            <div class="d-flex align-items-center gap-4" style="margin-bottom: -100px; margin-right: -80px; margin-left: 100px;">
+            <div class="d-flex flex-column flex-lg-row align-items-center gap-4 mb-n5">
                 <div class="shadow-lg px-4 py-3 rounded-5 bg-light">
                     <div class="d-flex align-items-center gap-2 mb-4">
                         <img src="./images/cesar-rincon.png" alt="">
@@ -243,7 +247,10 @@
                         </div>
                     </div>
                     <p>
-                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Doloribus ea accusantium, ducimus, a distinctio perferendis cum id eos reprehenderit, veniam eius quis! Voluptas, dolores expedita ab cupiditate quia corrupti facere exercitationem blanditiis sapiente, consequatur quo voluptatum vitae sunt dolor voluptatibus!
+                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Doloribus ea accusantium, ducimus, a
+                        distinctio perferendis cum id eos reprehenderit, veniam eius quis! Voluptas, dolores expedita ab
+                        cupiditate quia corrupti facere exercitationem blanditiis sapiente, consequatur quo voluptatum
+                        vitae sunt dolor voluptatibus!
                     </p>
                 </div>
                 <div class="shadow-lg px-4 py-3 rounded-5 bg-light">
@@ -263,7 +270,10 @@
                         </div>
                     </div>
                     <p>
-                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Doloribus ea accusantium, ducimus, a distinctio perferendis cum id eos reprehenderit, veniam eius quis! Voluptas, dolores expedita ab cupiditate quia corrupti facere exercitationem blanditiis sapiente, consequatur quo voluptatum vitae sunt dolor voluptatibus!
+                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Doloribus ea accusantium, ducimus, a
+                        distinctio perferendis cum id eos reprehenderit, veniam eius quis! Voluptas, dolores expedita ab
+                        cupiditate quia corrupti facere exercitationem blanditiis sapiente, consequatur quo voluptatum
+                        vitae sunt dolor voluptatibus!
                     </p>
                 </div>
                 <div class="shadow-lg px-4 py-3 rounded-5 bg-light">
@@ -283,10 +293,14 @@
                         </div>
                     </div>
                     <p>
-                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Doloribus ea accusantium, ducimus, a distinctio perferendis cum id eos reprehenderit, veniam eius quis! Voluptas, dolores expedita ab cupiditate quia corrupti facere exercitationem blanditiis sapiente, consequatur quo voluptatum vitae sunt dolor voluptatibus!
+                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Doloribus ea accusantium, ducimus, a
+                        distinctio perferendis cum id eos reprehenderit, veniam eius quis! Voluptas, dolores expedita ab
+                        cupiditate quia corrupti facere exercitationem blanditiis sapiente, consequatur quo voluptatum
+                        vitae sunt dolor voluptatibus!
                     </p>
                 </div>
-                <i class="fa-solid fa-angle-right fs-5 p-4 bg-light shadow-lg rounded-circle"></i>
+                <i class="fa-solid fa-angle-right fs-5 p-4 bg-light shadow-lg rounded-circle d-none d-lg-block"></i>
+                <i class="fa-solid fa-angle-down fs-5 p-4 bg-light shadow-lg rounded-circle d-lg-none"></i>
             </div>
         </div>
     </section>
@@ -312,7 +326,8 @@
 
     <!-- Footer -->
     <footer class="bg-dark">
-        <p class="text-center text-white fs-5 fw-bold"><span class="me-3">&#x24B8;</span><span clss="">Helplama 2021</span></p>
+        <p class="text-center text-white fs-5 fw-bold"><span class="me-3">&#x24B8;</span><span clss="">Helplama
+                2021</span></p>
     </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
