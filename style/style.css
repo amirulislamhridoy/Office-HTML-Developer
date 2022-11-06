@@ -10945,9 +10945,9 @@ header img {
   font-weight: 600;
 }
 
-.details, .office-work {
+.details, .office-work, .office-title {
   margin-top: 180px;
 }
-.details h1, .details .h1, .office-work h1, .office-work .h1 {
+.details h1, .details .h1, .office-work h1, .office-work .h1, .office-title h1, .office-title .h1 {
   margin-bottom: 60px;
 }/*# sourceMappingURL=style.css.map */
