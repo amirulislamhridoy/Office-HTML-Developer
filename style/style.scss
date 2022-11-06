@@ -4,6 +4,17 @@ $btn-font-size: 10px;
 @import "../node_modules/bootstrap/scss/bootstrap";
 $enable-negative-margins: true;
 
+// mixin
+@mixin margin($m1, $m2) {
+    margin-top: $m1;
+        h1{
+            margin-bottom: $m2;
+        }
+}
+@mixin button($value){
+    font-size: $value !important;
+}
+
 header {
     img {
         margin-top: 33px;
@@ -17,8 +28,13 @@ header {
 button{
     font-size: 23px;
 }
-.details, .office-work, .office-title, .review, .recommend{
-    margin-top: 180px;
+.details, .office-work, .office-title, .review{
+    @include margin(180px, 60px)
+}
+.recommend{
+    margin-top: 100px;
+    padding-top: 80px;
+    background-color: $gray-400;
     h1{
         margin-bottom: 60px;
     }
@@ -41,23 +57,27 @@ footer{
 
 
 @media screen and (max-width: 1400px){
-    .details, .office-work, .office-title, .review, .recommend{
-        margin-top: 100px;
-        h1{
-            margin-bottom: 40px;
-        }
+    .details, .office-work, .office-title, .review{
+        @include margin(100px, 40px)
+    }
+}
+@media screen and (max-width: 1200px){
+    button{
+        @include button(18px)
+    }
+}
+@media screen and (min-width: 912px) and (max-width: 1018px){
+    .review-main{
+        margin-right: 10px !important;
     }
 }
 @media screen and (max-width: 992px){
+    button{
+        @include button(14px)
+    }
     header {
         img {
             margin-top: 0;
-        }
-    }
-    .details, .office-work, .office-title, .review, .recommend{
-        margin-top: 100px;
-        h1{
-            margin-bottom: 40px;
         }
     }
     .mb-n5{
@@ -72,9 +92,10 @@ footer{
 }
 @media screen and (max-width: 576px) {
     .details, .office-work, .office-title, .review, .recommend{
-        margin-top: 50px;
-        h1{
-            margin-bottom: 15px;
-        }
+        @include margin(50px, 15px);
+    }
+    .mb-n5{
+        margin-left: -10px !important;
+        margin-right: -40px !important;
     }
 }

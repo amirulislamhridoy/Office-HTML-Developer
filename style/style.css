@@ -10949,10 +10949,19 @@ button {
   font-size: 23px;
 }
 
-.details, .office-work, .office-title, .review, .recommend {
+.details, .office-work, .office-title, .review {
   margin-top: 180px;
 }
-.details h1, .details .h1, .office-work h1, .office-work .h1, .office-title h1, .office-title .h1, .review h1, .review .h1, .recommend h1, .recommend .h1 {
+.details h1, .details .h1, .office-work h1, .office-work .h1, .office-title h1, .office-title .h1, .review h1, .review .h1 {
+  margin-bottom: 60px;
+}
+
+.recommend {
+  margin-top: 100px;
+  padding-top: 80px;
+  background-color: #ced4da;
+}
+.recommend h1, .recommend .h1 {
   margin-bottom: 60px;
 }
 
@@ -10976,22 +10985,29 @@ footer {
 }
 
 @media screen and (max-width: 1400px) {
-  .details, .office-work, .office-title, .review, .recommend {
+  .details, .office-work, .office-title, .review {
     margin-top: 100px;
   }
-  .details h1, .details .h1, .office-work h1, .office-work .h1, .office-title h1, .office-title .h1, .review h1, .review .h1, .recommend h1, .recommend .h1 {
+  .details h1, .details .h1, .office-work h1, .office-work .h1, .office-title h1, .office-title .h1, .review h1, .review .h1 {
     margin-bottom: 40px;
   }
 }
+@media screen and (max-width: 1200px) {
+  button {
+    font-size: 18px !important;
+  }
+}
+@media screen and (min-width: 912px) and (max-width: 1018px) {
+  .review-main {
+    margin-right: 10px !important;
+  }
+}
 @media screen and (max-width: 992px) {
+  button {
+    font-size: 14px !important;
+  }
   header img {
     margin-top: 0;
-  }
-  .details, .office-work, .office-title, .review, .recommend {
-    margin-top: 100px;
-  }
-  .details h1, .details .h1, .office-work h1, .office-work .h1, .office-title h1, .office-title .h1, .review h1, .review .h1, .recommend h1, .recommend .h1 {
-    margin-bottom: 40px;
   }
   .mb-n5 {
     margin-bottom: -80px !important;
@@ -11009,5 +11025,9 @@ footer {
   }
   .details h1, .details .h1, .office-work h1, .office-work .h1, .office-title h1, .office-title .h1, .review h1, .review .h1, .recommend h1, .recommend .h1 {
     margin-bottom: 15px;
+  }
+  .mb-n5 {
+    margin-left: -10px !important;
+    margin-right: -40px !important;
   }
 }/*# sourceMappingURL=style.css.map */
