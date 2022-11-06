@@ -10945,10 +10945,10 @@ header img {
   font-weight: 600;
 }
 
-.details, .office-work, .office-title, .review {
+.details, .office-work, .office-title, .review, .recommend {
   margin-top: 180px;
 }
-.details h1, .details .h1, .office-work h1, .office-work .h1, .office-title h1, .office-title .h1, .review h1, .review .h1 {
+.details h1, .details .h1, .office-work h1, .office-work .h1, .office-title h1, .office-title .h1, .review h1, .review .h1, .recommend h1, .recommend .h1 {
   margin-bottom: 60px;
 }
 
