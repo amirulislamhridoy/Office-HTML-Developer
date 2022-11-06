@@ -1,6 +1,8 @@
+// npm i bootstrap-scss / bootstrap
+$primary: #1492E6;
+@import "../node_modules/bootstrap/scss/bootstrap";
+
 header {
-    border: 1px solid #707070;
-    opacity: 1;
     img {
         margin-top: 33px;
         margin-bottom: 22px;
