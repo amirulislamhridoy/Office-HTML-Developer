@@ -12,9 +12,12 @@ header {
     font-size: 23px;
     font-weight: 600;
 }
-.details, .office-work, .office-title{
+.details, .office-work, .office-title, .review{
     margin-top: 180px;
     h1{
         margin-bottom: 60px;
     }
+}
+.fa-star{
+    color: $orange;
 }

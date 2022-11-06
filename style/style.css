@@ -10945,9 +10945,13 @@ header img {
   font-weight: 600;
 }
 
-.details, .office-work, .office-title {
+.details, .office-work, .office-title, .review {
   margin-top: 180px;
 }
-.details h1, .details .h1, .office-work h1, .office-work .h1, .office-title h1, .office-title .h1 {
+.details h1, .details .h1, .office-work h1, .office-work .h1, .office-title h1, .office-title .h1, .review h1, .review .h1 {
   margin-bottom: 60px;
+}
+
+.fa-star {
+  color: #fd7e14;
 }/*# sourceMappingURL=style.css.map */
